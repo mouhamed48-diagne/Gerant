@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gerant/authentification/teraTextfield.dart';
+import 'package:gerant/navigationBar.dart';
 import 'package:gerant/pages-pincipales/homepage/homepage.dart';
 import 'package:gerant/constant.dart';
 class Login extends StatelessWidget {
@@ -68,7 +69,7 @@ class Login extends StatelessWidget {
                 onTap: () => {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => HomePage())
+                    MaterialPageRoute(builder: (context) => NavBar())
                   )
                 }, 
               child: Container(

@@ -14,7 +14,7 @@ class _LivraisonsRowState extends State<LivraisonsRow> {
     return Container(
             padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
             width: 350,
-            height: 120,
+            height: 110,
             decoration: BoxDecoration(
               color: teraDark
             ),
@@ -72,9 +72,9 @@ class Livraison extends StatelessWidget {
 
     return Container(
       margin: EdgeInsets.only(left: 10),
-      padding: EdgeInsets.fromLTRB(5, 5, 5, 10),
+      padding: EdgeInsets.fromLTRB(5, 5, 5, 5),
       width: 100,
-      height: 100,
+      height: 90,
       decoration: BoxDecoration(
         color: teraOrange,
         borderRadius: BorderRadius.circular(5)
