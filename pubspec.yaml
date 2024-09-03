@@ -78,5 +78,8 @@ flutter:
     - family: Jost
       fonts:
         - asset: fonts/Jost-VariableFont_wght.ttf
+    - family: jost
+      fonts:
+        - asset: fonts/Poppins-Regular.ttf
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

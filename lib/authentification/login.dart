@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gerant/authentification/teraTextfield.dart';
-
+import 'package:gerant/pages-pincipales/homepage/homepage.dart';
+import 'package:gerant/constant.dart';
 class Login extends StatelessWidget {
   Login({super.key});
   final identifiantController = TextEditingController();
@@ -64,12 +65,17 @@ class Login extends StatelessWidget {
               ),
               SizedBox(height: 40,),
               InkWell(
-                onTap: () => {}, 
+                onTap: () => {
+                  Navigator.push(
+                    context,
+                    MaterialPageRoute(builder: (context) => HomePage())
+                  )
+                }, 
               child: Container(
                 width: 200,
                 height: 60,
                 decoration: BoxDecoration(
-                  color: Color.fromARGB(255, 247, 72, 29),
+                  color: teraOrange,
                   borderRadius: BorderRadius.circular(6)
                 ),
                 child: Center(
@@ -100,14 +106,14 @@ class Login extends StatelessWidget {
                       fontFamily: "Jost",
                       decoration: TextDecoration.underline,
                       fontWeight: FontWeight.bold,
-                      color: Color.fromARGB(255, 247, 72, 29),
+                      color: teraOrange,
                     ),
                     ),
                 ],
               ),
               SizedBox(height: 20,),
               Container(
-                color: Color.fromARGB(255, 247, 72, 29),
+                color: teraOrange,
                 height: 22,
               )
             ],
