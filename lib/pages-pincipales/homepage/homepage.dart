@@ -22,7 +22,7 @@ class HomePage extends StatelessWidget {
             LivraisonsEnCours(),
             SizedBox(height: 20,),
             EvolutionDesPrix(),
-            SizedBox(height: 20,),
+            SizedBox(height: 15,),
             InfosEntrepot(),
           ],
         ),
