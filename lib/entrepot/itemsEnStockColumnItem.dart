@@ -21,7 +21,7 @@ class ItemsEnStockColumnItem extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-        if(productType == "carotte"){
+    if(productType == "carotte"){
       imagePath = "assets/les-carottes.png";
     }
     if(productType == "pomme de terre"){
