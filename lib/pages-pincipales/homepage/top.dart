@@ -8,7 +8,7 @@ class Top extends StatelessWidget {
   Widget build(BuildContext context) {
     return Center(
       child: Container(
-        height: 210,
+        height: 190,
         decoration: BoxDecoration(
           color: teraOrange,
           borderRadius: BorderRadius.only(
@@ -18,7 +18,7 @@ class Top extends StatelessWidget {
         ),
         child: Column(
           children: [
-          SizedBox(height: 40,),
+          SizedBox(height: 20,),
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
