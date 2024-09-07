@@ -84,23 +84,24 @@ class ModifierLesStocks extends StatelessWidget {
                   ],
                 ),
                 SizedBox(height: 20,),
-                Text("Sélectionnez une quantité", style: TextStyle(fontFamily: "Poppins", fontWeight: FontWeight.bold, fontSize: 16),),
+                Text("Numéro du producteur", style: TextStyle(fontFamily: "Poppins", fontWeight: FontWeight.bold, fontSize: 16),),
                 SizedBox(height: 10,),
                 Container(
                   width: MediaQuery.of(context).size.width,
                   decoration: BoxDecoration(
                     color: teraGrey,
-                    borderRadius: BorderRadius.circular(5)
+                    borderRadius: BorderRadius.circular(5),
+                    border: Border.all(color: Colors.grey)
                   ),
-                  child: DropdownMenu(
-                    dropdownMenuEntries: listeProducteur,
+                  child: TextField(
                     controller: producteurController,
-                    width: MediaQuery.of(context).size.width,
-                    menuStyle: MenuStyle(
-                      backgroundColor: WidgetStatePropertyAll(Colors.white)
+                    keyboardType: TextInputType.numberWithOptions(),
+                    decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                        borderSide: BorderSide.none,
+                      ) 
                     ),
-                    menuHeight: 250,
-                    ),
+                  )
                 ),
                 SizedBox(height: 20,),
                 Text("Pourquoi modifiez vous le stock?", style: TextStyle(fontFamily: "Poppins", fontWeight: FontWeight.bold, fontSize: 16),),
