@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gerant/constant.dart';
-import 'package:gerant/ventes/transactionsEnCours.dart';
-import 'package:gerant/ventes/ventesEvolutionDesPrix.dart';
-import 'package:gerant/ventes/ventesTop.dart';
+import 'package:gerant/pages-pincipales/ventes/transactionsEnCours.dart';
+import 'package:gerant/pages-pincipales/ventes/ventesEvolutionDesPrix.dart';
+import 'package:gerant/pages-pincipales/ventes/ventesTop.dart';
 
 class Ventes extends StatelessWidget {
   const Ventes({super.key});

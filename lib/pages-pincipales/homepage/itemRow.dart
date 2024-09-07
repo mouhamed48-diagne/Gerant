@@ -34,26 +34,15 @@ class _ItemRowState extends State<ItemRow> {
 class Item extends StatelessWidget {
   final String itemType;
   final Widget itemInfo; 
-  String path;
 
    Item({
     super.key,
     required this.itemType,
     required this.itemInfo,
-    this.path = ""
     });
 
   @override
   Widget build(BuildContext context) {
-    if(itemType == "carotte"){
-      path = "assets/les-carottes.png";
-    }
-    if(itemType == "pomme de terre"){
-      path = "assets/patate.png";
-    }
-    if(itemType == "arachide"){
-      path = "assets/cacahuete.png";
-    }
     return InkWell(
       onTap: () {},
       child: Container(
@@ -64,7 +53,7 @@ class Item extends StatelessWidget {
           borderRadius: BorderRadius.circular(100),
           color: teraDark,
         ),
-      child: Image.asset(path, scale: 11,),
+      child: ImageProduct(itemType: itemType, imageScale: 11,)
       ),
     );
   }

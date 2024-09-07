@@ -50,8 +50,8 @@ class TeraTextField extends StatelessWidget {
               border: BorderDirectional(
                 end: BorderSide(
                   width: 1
-                )
-              )
+                ),
+              ),
             ),
             child: Image.asset(
               prefixIcon,

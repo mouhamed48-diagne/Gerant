@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gerant/constant.dart';
-import 'package:gerant/entrepot/itemsEnStockColumnItem.dart';
+import 'package:gerant/pages-pincipales/entrepot/itemsEnStockColumnItem.dart';
 
 List <ItemsEnStockColumnItem> items = [
   ItemsEnStockColumnItem(productType: "carotte", quantite: 50, etat: "Bon etat", qPlus: 3, qMoins: 10),

@@ -48,27 +48,16 @@ class Livraison extends StatelessWidget {
   final String name;
   final String itemType;
   final int quantity;
-  String path;
 
   Livraison({
     super.key,
     required this.name,
     required this.itemType,
     required this.quantity,
-    this.path = ""
     });
 
   @override
   Widget build(BuildContext context) {
-    if(itemType == "carotte"){
-      path = "assets/les-carottes.png";
-    }
-    if(itemType == "pomme de terre"){
-      path = "assets/patate.png";
-    }
-    if(itemType == "arachide"){
-      path = "assets/cacahuete.png";
-    }
 
     return Container(
       margin: EdgeInsets.only(left: 10),
@@ -102,7 +91,7 @@ class Livraison extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset(path, scale: 20,),
+                ImageProduct(itemType: itemType, imageScale: 20,),
                 SizedBox(width: 5,),
                 Text(
                   "$quantity Kg",

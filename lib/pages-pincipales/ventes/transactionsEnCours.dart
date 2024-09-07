@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gerant/constant.dart';
-import 'package:gerant/ventes/transactionsEnCoursItems.dart';
+import 'package:gerant/pages-pincipales/ventes/transactionsEnCoursItems.dart';
 
 class TransactionsEnCours extends StatelessWidget {
   const TransactionsEnCours({super.key});

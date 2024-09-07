@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gerant/constant.dart';
-import 'package:gerant/ventes/ventesTopItems.dart';
+import 'package:gerant/pages-pincipales/ventes/ventesTopItems.dart';
 
 class ProduitsDisponibles extends StatefulWidget {
   const ProduitsDisponibles({super.key});

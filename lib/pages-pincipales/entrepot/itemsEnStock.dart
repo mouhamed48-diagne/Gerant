@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gerant/constant.dart';
-import 'package:gerant/entrepot/itemsEnStockColumn.dart';
+import 'package:gerant/pages-pincipales/entrepot/itemsEnStockColumn.dart';
 
 class ItemsEnStockCol extends StatelessWidget {
   const ItemsEnStockCol({super.key});

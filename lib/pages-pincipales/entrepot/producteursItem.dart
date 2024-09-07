@@ -87,33 +87,27 @@ class ProductItem extends StatelessWidget {
 
   final String productType;
   final int quantity;
-    String imagePath;
    ProductItem({
     super.key,
     required this.productType,
     required this.quantity,
-    this. imagePath = ""
     });
 
   @override
   Widget build(BuildContext context) {
-    if(productType == "carotte"){
-      imagePath = "assets/les-carottes.png";
-    }
-    if(productType == "pomme de terre"){
-      imagePath = "assets/patate.png";
-    }
-    if(productType == "arachide"){
-      imagePath = "assets/cacahuete.png";
-    }
-    return Container(
-      margin: EdgeInsets.fromLTRB(0, 0, 0, 5),
-      child: Row(
-        children: [
-          Image.asset(imagePath, scale: 24,),
-          SizedBox(width: 10,),
-          Text("$quantity Kg", style: TextStyle(fontFamily: "Poppins", color: Colors.white, fontWeight: FontWeight.w400, fontSize: 14),),
-        ],
+    return InkWell(
+      onTap: () {
+        
+      },
+      child: Container(
+        margin: EdgeInsets.fromLTRB(0, 0, 0, 5),
+        child: Row(
+          children: [
+            ImageProduct(itemType: productType, imageScale: 24,),
+            SizedBox(width: 10,),
+            Text("$quantity Kg", style: TextStyle(fontFamily: "Poppins", color: Colors.white, fontWeight: FontWeight.w400, fontSize: 14),),
+          ],
+        ),
       ),
     );
   }

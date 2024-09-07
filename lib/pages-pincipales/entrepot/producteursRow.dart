@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gerant/constant.dart';
-import 'package:gerant/entrepot/producteursItem.dart';
+import 'package:gerant/pages-pincipales/entrepot/producteursItem.dart';
 
 class ProducteursRow extends StatefulWidget {
   const ProducteursRow({super.key});

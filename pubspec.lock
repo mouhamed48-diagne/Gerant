@@ -65,6 +65,14 @@ packages:
       url: "https://pub.dev"
     source: hosted
     version: "1.3.1"
+  fancy_switch:
+    dependency: "direct main"
+    description:
+      name: fancy_switch
+      sha256: "7a4238806498e8ba73590810a224fff86431bfc0ed84daa610c99757091c7272"
+      url: "https://pub.dev"
+    source: hosted
+    version: "0.0.4"
   fl_chart:
     dependency: "direct main"
     description:

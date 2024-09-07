@@ -5,7 +5,6 @@ class VentesTopItems extends StatelessWidget {
   final String productType;
   final int prix;
   final int numberTransactions;
-  String imagePath;
   final int ventes;
 
   VentesTopItems({
@@ -13,21 +12,11 @@ class VentesTopItems extends StatelessWidget {
     required this.productType,
     required this.prix,
     required this.numberTransactions,
-    this.imagePath = '',
     required this.ventes
     });
 
   @override
   Widget build(BuildContext context) {
-    if(productType == "carotte"){
-      imagePath = "assets/les-carottes.png";
-    }
-    if(productType == "pomme de terre"){
-      imagePath = "assets/patate.png";
-    }
-    if(productType == "arachide"){
-      imagePath = "assets/cacahuete.png";
-    }
 
     return Container(
       margin: EdgeInsets.fromLTRB(10, 0, 0, 0),
@@ -43,7 +32,7 @@ class VentesTopItems extends StatelessWidget {
         children: [
           Row(
             children: [
-              Image.asset(imagePath, scale: 13,),
+              ImageProduct(itemType: productType, imageScale: 13,),
               SizedBox(width: 5,),
               Text(
                 "${prix} F/Kg",

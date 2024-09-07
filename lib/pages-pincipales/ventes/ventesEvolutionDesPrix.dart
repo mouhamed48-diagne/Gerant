@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:gerant/constant.dart';
-import 'package:gerant/ventes/ventesEvolutionDesPrixItems.dart';
+import 'package:gerant/pages-pincipales/ventes/ventesEvolutionDesPrixItems.dart';
 
 class VentesEvolutionsDesPrix extends StatelessWidget {
   const VentesEvolutionsDesPrix({super.key});

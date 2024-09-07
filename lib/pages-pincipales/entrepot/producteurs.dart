@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:gerant/constant.dart';
-import 'package:gerant/entrepot/producteursRow.dart';
+import 'package:gerant/pages-pincipales/entrepot/gerer-les-stocks/stocks.dart';
+import 'package:gerant/pages-pincipales/entrepot/producteursRow.dart';
 
 class Producteurs extends StatelessWidget {
   const Producteurs({super.key});
@@ -29,7 +30,7 @@ class Producteurs extends StatelessWidget {
         onTap: () => {
             Navigator.push(
               context,
-              MaterialPageRoute(builder: (context) => Scaffold())
+              MaterialPageRoute(builder: (context) => Stocks())
             )
           }, 
         child: Container(

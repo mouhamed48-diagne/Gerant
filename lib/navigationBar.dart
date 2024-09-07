@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gerant/constant.dart';
-import 'package:gerant/entrepot/entrepot.dart';
+import 'package:gerant/pages-pincipales/entrepot/entrepot.dart';
 import 'package:gerant/pages-pincipales/homepage/homepage.dart';
-import 'package:gerant/ventes/ventes.dart';
+import 'package:gerant/pages-pincipales/ventes/ventes.dart';
 
 class NavBar extends StatefulWidget {
   const NavBar({super.key});

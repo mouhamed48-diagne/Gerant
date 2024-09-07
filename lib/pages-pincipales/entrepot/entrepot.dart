@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:gerant/constant.dart';
-import 'package:gerant/entrepot/itemsEnStock.dart';
-import 'package:gerant/entrepot/producteurs.dart';
-import 'package:gerant/entrepot/topTitle.dart';
+import 'package:gerant/pages-pincipales/entrepot/itemsEnStock.dart';
+import 'package:gerant/pages-pincipales/entrepot/producteurs.dart';
+import 'package:gerant/pages-pincipales/entrepot/topTitle.dart';
 import 'package:gerant/pages-pincipales/homepage/itemsEnStock.dart';
 
 class Entrepot extends StatelessWidget {
