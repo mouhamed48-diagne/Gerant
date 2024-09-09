@@ -1,37 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:gerant/constant.dart';
-import 'package:gerant/pages-pincipales/entrepot/gerer-les-stocks/gererProducteur/gererProducteur.dart';
 
-class ProducteursRow extends StatefulWidget {
-  const ProducteursRow({super.key});
-
-  @override
-  State<ProducteursRow> createState() => _ProducteursRowState();
-}
-
-class _ProducteursRowState extends State<ProducteursRow> {
-  @override
-  Widget build(BuildContext context) {
-    return SingleChildScrollView(
-      scrollDirection: Axis.horizontal,
-      child: Row(
-        children: [
-          ProducteursItem(name: "Ibrahima Dia", nombreLivraison: 12),
-          ProducteursItem(name: "Ibrahima Dia", nombreLivraison: 12),
-          ProducteursItem(name: "Ibrahima Dia", nombreLivraison: 12),
-          ProducteursItem(name: "Ibrahima Dia", nombreLivraison: 12),
-          ProducteursItem(name: "Ibrahima Dia", nombreLivraison: 12),
-        ],
-      ),
-    );
-  }
-}
-
-class ProducteursItem extends StatelessWidget {
+class ReservationsItems extends StatelessWidget {
   final String name;
   final int nombreLivraison;
 
-  const ProducteursItem({
+  const ReservationsItems({
     super.key,
     required this.name,
     required this.nombreLivraison
@@ -41,7 +15,6 @@ class ProducteursItem extends StatelessWidget {
   Widget build(BuildContext context) {
     return InkWell(
       onTap: () {
-        Navigator.push(context, MaterialPageRoute(builder: (context) => GererProducteur(name: name,)));
       },
       child: Container(
         padding: EdgeInsets.all(10),
