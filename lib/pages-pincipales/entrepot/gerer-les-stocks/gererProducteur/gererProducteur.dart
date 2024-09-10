@@ -1,7 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:gerant/constant.dart';
+import 'package:gerant/pages-pincipales/entrepot/gerer-les-stocks/gererProducteur/reservationsItems.dart';
 import 'package:gerant/pages-pincipales/entrepot/gerer-les-stocks/stocks.dart';
 
+List <ReservationsItems> listeReservations = [
+  ReservationsItems(time: "1 semaine", productType: "carotte", quantity: 50),
+  ReservationsItems(time: "1 semaine", productType: "carotte", quantity: 50),
+  ReservationsItems(time: "1 semaine", productType: "carotte", quantity: 50),
+  ReservationsItems(time: "1 semaine", productType: "carotte", quantity: 50),
+  ReservationsItems(time: "1 semaine", productType: "carotte", quantity: 50),
+  ReservationsItems(time: "1 semaine", productType: "carotte", quantity: 50),
+  ReservationsItems(time: "1 semaine", productType: "carotte", quantity: 50),
+  ReservationsItems(time: "1 semaine", productType: "carotte", quantity: 50),
+];
 class GererProducteur extends StatefulWidget {
   final String name;
   const GererProducteur({
@@ -62,11 +73,12 @@ class _GererProducteurState extends State<GererProducteur> {
                     width: MediaQuery.of(context).size.width,
                     height: MediaQuery.of(context).size.height/1.7,
                     color: teraGrey,
-                    child: SingleChildScrollView(
-                      child: Column(
-                        children: [
-                          
-                        ],
+                    child: Padding(
+                      padding: const EdgeInsets.fromLTRB(10, 20, 10, 20),
+                      child: SingleChildScrollView(
+                        child: Column(
+                          children: listeReservations,
+                        ),
                       ),
                     ),
                   )

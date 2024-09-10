@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 import 'package:gerant/constant.dart';
+import 'package:gerant/pages-pincipales/homepage/reservationsBientotFini/reservationsBientotFini.dart';
 
 class Top extends StatelessWidget {
   const Top({super.key});
@@ -62,7 +63,11 @@ class Top extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       TopInfo(content: "5 réservations finissent bientôt", iconPath: "assets/icons/icons8-expiré-90.png"),
-                      Image.asset("assets/icons/icons8-flèche-droite-90.png", scale: 4,),
+                      InkWell(
+                        onTap: () => {
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => ReservationsBientotFini()))
+                        },
+                        child: Image.asset("assets/icons/icons8-flèche-droite-90.png", scale: 4,)),
                     ],
                   ),
                 ],
